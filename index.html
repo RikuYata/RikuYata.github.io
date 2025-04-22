@@ -1,45 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Test Page: Don't Panic</title>
-    <meta charset="utf-8">
-    <style>
-      /* グローバルスタイル */
-      a {
-        color: red;
-      }
 
-      /* SNSスタイル */
-      .social-link {
-          color: blue;
-        }
-        
-        /* バイオグラフィースタイル */
-        .bio-box {
-            border: 1px solid black;
-        }
-        .bio-copy a {
-            color: green;
-        }
-        div.bio-box{
-          border: 1px solid green;
-        }
-        </style>
-  </head>
-  <body>
-    <h1>I'm an h1</h1>
-    <ul>
-      <li>
-        <a href="https://example.com/">Link</a>
-      </li>
-      <li>
-        <a href="https://example.com/">Link</a>
-      </li>
-      <li>
-        <a href="https://example.com/">Link</a>
-      </li>
-    </ul>
-    <h2>I'm an h2</h2>
+<head>
+  <title>Test Page: Don't Panic</title>
+  <meta charset="utf-8">
+  <style>
+    /* グローバルスタイル */
+    a {
+      color: #f00;
+    }
+
+    body{
+      height: 800px;
+    }
+    
+    h2 {
+      font-size: 30px;
+    }
+
+    /* SNSスタイル */
+    .social-link {
+      color: rgba(255, 0, 0, 20);
+    }
+
+    /* バイオグラフィースタイル */
+    .bio-wrapper {
+    }
+    .bio-box {
+      border: 1px solid #000;
+      width: 50%;
+    }
+
+    .bio-copy a {
+      color: #007f00;
+    }
+
+    div.bio-box {
+      border: 1px solid #007f00;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="border: 1px solid #000; width: 50%; height: 100%;">I'm a percent
+    test
+  </div>
+  <h1>I'm an h1</h1>
+  <ul>
+    <li>
+      <a href="https://example.com/" class="social-link">Link</a>
+    </li>
+    <li>
+      <a href="https://example.com/" class="social-link">Link</a>
+    </li>
+    <li>
+      <a href="https://example.com/" class="social-link">Link</a>
+    </li>
+  </ul>
+  <h2>I'm an h2</h2>
+  <div class="bio-wrapper">
     <div class="bio-box">
       <h3>Michael Hartl</h3>
       <a href="https://twitter.com/mhartl" class="social-link">here</a>
@@ -48,13 +67,13 @@
           Known for his dazzling charm, rapier wit, and unrivaled humility,
           Michael is the creator of the
           <a href="https://www.railstutorial.org/">Ruby on Rails
-          Tutorial</a> and principal author of the
+            Tutorial</a> and principal author of the
           <a href="https://learnenough.com/">
-          Learn Enough to Be Dangerous</a> introductory sequence. Michael
+            Learn Enough to Be Dangerous</a> introductory sequence. Michael
           is also notorious as the founder of
           <a href="http://tauday.com/">Tau Day</a> and author of
           <a href="http://tauday.com/tau-manifesto"><em>The Tau
-          Manifesto</em></a>, but rumors that he's secretly a supervillain
+              Manifesto</em></a>, but rumors that he's secretly a supervillain
           are slightly exaggerated.
         </p>
       </div>
@@ -91,5 +110,7 @@
         </p>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
