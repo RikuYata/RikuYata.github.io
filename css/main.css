@@ -838,9 +838,13 @@ h4 {
     }
 
     /* homeページスタイル */
+
+    .home {
+        box-sizing: border-box;
+        width: 100%;
+    }
     .home-callout {
         flex-direction: column;
-        ;
     }
 
     .callout-copy {
@@ -851,6 +855,7 @@ h4 {
         float: none;
         font-size: 1.3rem;
         width: auto;
+        /* width: 100%; */
     }
 
     /* ブログスタイル */
@@ -867,9 +872,9 @@ h4 {
     }
 
     /* 猫画像を収める*/
-    /* .pull-left {
+    .pull-left {
         width: 100%;
-    } */
+    }
 
     /* ギャラリースタイル */
     .gallery {
