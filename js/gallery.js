@@ -8,6 +8,16 @@ function activateGallery() {
     let galleryInfo = document.querySelector("#gallery-info");
     let title = galleryInfo.querySelector(".title");
     let description = galleryInfo.querySelector(".description");
+
+    // プリリロード用：　サムネイルが持つ大画像URLを全て取得
+    let preloadImageUrls = Array.from(thumbnails).map(thumbnail => 
+        thumbnail.dataset.largeVersion);
+    // プリロード処理
+    preloadImageUrls.forEach(function(url){
+        const img = new Image();
+        img.src = url;
+    });
+    
     thumbnails.forEach(function(thumbnail) {
       thumbnail.addEventListener("click", function() {
         // クリックされたサムネイル画像をメイン画像として設定する
