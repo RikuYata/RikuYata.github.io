@@ -1,0 +1,4 @@
+function activateGallery() {
+    alert("ギャラリーファイルからこんにちは!");
+
+}
